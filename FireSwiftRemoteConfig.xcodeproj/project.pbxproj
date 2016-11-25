@@ -12,9 +12,13 @@
 		3D5008201DE21FC30015FBA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D50081E1DE21FC30015FBA7 /* Main.storyboard */; };
 		3D5008221DE21FC30015FBA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D5008211DE21FC30015FBA7 /* Assets.xcassets */; };
 		3D5008251DE21FC30015FBA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D5008231DE21FC30015FBA7 /* LaunchScreen.storyboard */; };
+		3D50082D1DE2216F0015FBA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D50082C1DE2216F0015FBA7 /* GoogleService-Info.plist */; };
+		3D50082F1DE22A1D0015FBA7 /* FireSwiftRemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D50082E1DE22A1D0015FBA7 /* FireSwiftRemoteConfigDefaults.plist */; };
+		F0B6ECE73ABA1B6F6A81E7D6 /* Pods_FireSwiftRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 018778CBEFF479CC8F5B97A3 /* Pods_FireSwiftRemoteConfig.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018778CBEFF479CC8F5B97A3 /* Pods_FireSwiftRemoteConfig.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireSwiftRemoteConfig.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5008171DE21FC30015FBA7 /* FireSwiftRemoteConfig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireSwiftRemoteConfig.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D50081A1DE21FC30015FBA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D50081C1DE21FC30015FBA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		3D5008211DE21FC30015FBA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D5008241DE21FC30015FBA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D5008261DE21FC30015FBA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D50082C1DE2216F0015FBA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D50082E1DE22A1D0015FBA7 /* FireSwiftRemoteConfigDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FireSwiftRemoteConfigDefaults.plist; sourceTree = "<group>"; };
+		793AA8C9A6B9DA9814318E51 /* Pods-FireSwiftRemoteConfig.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireSwiftRemoteConfig.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireSwiftRemoteConfig/Pods-FireSwiftRemoteConfig.debug.xcconfig"; sourceTree = "<group>"; };
+		BFBDDD021C2AC3645E1F9AFC /* Pods-FireSwiftRemoteConfig.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireSwiftRemoteConfig.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireSwiftRemoteConfig/Pods-FireSwiftRemoteConfig.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B6ECE73ABA1B6F6A81E7D6 /* Pods_FireSwiftRemoteConfig.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2411D83EF308BDF05FAAD5EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				018778CBEFF479CC8F5B97A3 /* Pods_FireSwiftRemoteConfig.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2704FA3AA94FEE9F9D341AFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				793AA8C9A6B9DA9814318E51 /* Pods-FireSwiftRemoteConfig.debug.xcconfig */,
+				BFBDDD021C2AC3645E1F9AFC /* Pods-FireSwiftRemoteConfig.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3D50080E1DE21FC30015FBA7 = {
 			isa = PBXGroup;
 			children = (
 				3D5008191DE21FC30015FBA7 /* FireSwiftRemoteConfig */,
 				3D5008181DE21FC30015FBA7 /* Products */,
+				2704FA3AA94FEE9F9D341AFF /* Pods */,
+				2411D83EF308BDF05FAAD5EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,8 @@
 				3D5008211DE21FC30015FBA7 /* Assets.xcassets */,
 				3D5008231DE21FC30015FBA7 /* LaunchScreen.storyboard */,
 				3D5008261DE21FC30015FBA7 /* Info.plist */,
+				3D50082C1DE2216F0015FBA7 /* GoogleService-Info.plist */,
+				3D50082E1DE22A1D0015FBA7 /* FireSwiftRemoteConfigDefaults.plist */,
 			);
 			path = FireSwiftRemoteConfig;
 			sourceTree = "<group>";
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D5008291DE21FC30015FBA7 /* Build configuration list for PBXNativeTarget "FireSwiftRemoteConfig" */;
 			buildPhases = (
+				81F9219CF1E8E28048A6EE5D /* [CP] Check Pods Manifest.lock */,
 				3D5008131DE21FC30015FBA7 /* Sources */,
 				3D5008141DE21FC30015FBA7 /* Frameworks */,
 				3D5008151DE21FC30015FBA7 /* Resources */,
+				48CE950A1B43ACF485473988 /* [CP] Embed Pods Frameworks */,
+				59876B076C1B896754F453C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +129,7 @@
 				TargetAttributes = {
 					3D5008161DE21FC30015FBA7 = {
 						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -124,12 +157,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D5008251DE21FC30015FBA7 /* LaunchScreen.storyboard in Resources */,
+				3D50082D1DE2216F0015FBA7 /* GoogleService-Info.plist in Resources */,
+				3D50082F1DE22A1D0015FBA7 /* FireSwiftRemoteConfigDefaults.plist in Resources */,
 				3D5008221DE21FC30015FBA7 /* Assets.xcassets in Resources */,
 				3D5008201DE21FC30015FBA7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48CE950A1B43ACF485473988 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireSwiftRemoteConfig/Pods-FireSwiftRemoteConfig-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59876B076C1B896754F453C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireSwiftRemoteConfig/Pods-FireSwiftRemoteConfig-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81F9219CF1E8E28048A6EE5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D5008131DE21FC30015FBA7 /* Sources */ = {
@@ -181,10 +264,11 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -231,10 +315,11 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -258,8 +343,11 @@
 		};
 		3D50082A1DE21FC30015FBA7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793AA8C9A6B9DA9814318E51 /* Pods-FireSwiftRemoteConfig.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FireSwiftRemoteConfig/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kode.FireSwiftRemoteConfig;
@@ -270,8 +358,11 @@
 		};
 		3D50082B1DE21FC30015FBA7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBDDD021C2AC3645E1F9AFC /* Pods-FireSwiftRemoteConfig.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FireSwiftRemoteConfig/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kode.FireSwiftRemoteConfig;
@@ -299,6 +390,7 @@
 				3D50082B1DE21FC30015FBA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
